@@ -1,5 +1,5 @@
 # Mathematical Optimization: Dynamic Programming
-Brief introduction to dynamic programming, which is a mathematical optimization method and used to simplify optimization problems with infinite horizon by breaking it down into a sequence of decisions over time.
+Brief introduction to dynamic programming, which is a mathematical optimization method used to simplify optimization problems with infinite horizon by breaking it down into a sequence of decisions over time.
 
 <ins>**Table of Content:**</ins>
 - [Formulation Optimization Problem](#formulation-optimization-problem)
