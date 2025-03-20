@@ -52,7 +52,8 @@ To initialize our value function iteration (I = 0), we need an arbitrary initial
 
 Because the **Contraction Mapping Theorem** applies here, for any initial guess on the value function, *V<sup>I</sup>(W)* will converge to the true value function *V(W)* as *I → ∞*.
 
-*Visualization*
+<ins>*Visualization:*</ins>
+
 ![grafik](https://github.com/user-attachments/assets/3acf2c3e-fd45-498f-aa60-1deb80854dcd)
 
 
