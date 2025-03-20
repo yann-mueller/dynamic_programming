@@ -10,9 +10,14 @@ For illustrative reasons we use a simplistic T-period (potentially infinite) opt
 
 ![grafik](https://github.com/user-attachments/assets/63820b7c-1f31-4b74-94b9-000432e418a7)
 
-which is called the **Bellman equation** in which the time indices have been dropped and a new variable *W'* has been introduced with the law of motion *W'=W-c+y* governing the evolution of the constraint across periods.
+which is called the **Bellman equation** in which the time indices have been dropped and a new variable *W'* has been introduced with the law of motion *W'=W-c+y* governing the evolution of the constraint across periods. For a detailed explanation of this derivation and under which assumption it is valid, we refer to [De la Fuente (2000)](#references)
 
 
 
 
 ### Value Function Iteration
+
+
+
+## References
+De la Fuente, A. (2000). <a href="https://books.google.de/books?hl=en&lr=&id=YyW6V_bNHh4C&oi=fnd&pg=PR11&dq=de+la+fuente+dynamic+programing&ots=FE0SDoXJDk&sig=9k8WMA53WFYE3Vd-n7qQpNs5CO8#v=onepage&q=de%20la%20fuente%20dynamic%20programing&f=false" target="_blank" rel="noopener noreferrer">Mathematical Methods and Models for Economists</a>. Cambridge University Press.
