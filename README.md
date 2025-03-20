@@ -1,6 +1,11 @@
 # Mathematical Optimization: Dynamic Programming
 Brief introduction to dynamic programming, which is a mathematical optimization method and used to simplify optimization problems with infinite horizon by breaking it down into a sequence of decisions over time.
 
+<ins>**Table of Content:**</ins>
+- [Formulation Optimization Problem](#formulation-optimization-problem)
+- [Value Function Iteration](#value-function-iteration)
+- [Code](#code)
+
 ### Formulation Optimization Problem
 For illustrative reasons we use a simplistic T-period (potentially infinite) optimization problem where one has to choose a sequence *{c<sub>1</sub>,...,c<sub>T</sub>}* subject to the period objective function *u(c<sub>t</sub>)* and the constraint *c<sub>t</sub>=y* across all periods:
 
@@ -10,13 +15,24 @@ For illustrative reasons we use a simplistic T-period (potentially infinite) opt
 
 ![grafik](https://github.com/user-attachments/assets/63820b7c-1f31-4b74-94b9-000432e418a7)
 
-which is called the **Bellman equation** in which the time indices have been dropped and a new variable *W'* has been introduced with the law of motion *W'=W-c+y* governing the evolution of the constraint across periods. For a detailed explanation of this derivation and under which assumption it is valid, we refer to [De la Fuente (2000)](#references)
-
-
+which is called the **Bellman equation** in which the time indices have been dropped and a new state variable *W'* has been introduced with the law of motion *W'=W-c+y* governing the evolution of the constraint across periods. For a detailed explanation of this derivation and under which assumption it is valid, we refer to [De la Fuente (2000)](#references).
+The main purpose of this repository, however, is to show how the Bellman equation can be solved using numerical methods.
 
 
 ### Value Function Iteration
+The Value Function Iteration (VFI) is a numerical solution approach based on a discretization of state variables and an iterative maximization process to find an approximate solution close to the true solution.
 
+**Approach:**
+
+<ins>1) Discretization of State Variables:</ins>
+
+Choose a reasonably sized grid for every state variable. In our example, a *1 x N* vector: ***W** ={w<sub>1</sub>,...,w<sub>N</sub>}*
+
+<ins>2) Construction of Flow Matrix:</ins>
+
+Constructing a *N x N* flow matrix that contains the flow part for every possible combination of states today (i.e., ***W***) and states tomorrow (i.e., ***W'***)
+
+### Code
 
 
 ## References
